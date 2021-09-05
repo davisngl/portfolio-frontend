@@ -1,0 +1,50 @@
+body {
+    background-image: url('../img/memphis-mini.png');
+    background-size: 200px 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-subtle-dark {
+    @apply text-gray-900;
+}
+
+.underlined-graphic {
+    position: relative;
+}
+
+.underlined-graphic:after {
+    content: url('../img/underline.svg');
+    position: absolute;
+    top: 2.75rem;
+    left: 1rem;
+    background-origin: border-box;
+    overflow: auto;
+}
+
+.w-padded {
+    @apply w-3/4 mx-auto mt-12;
+}
+
+.w-extra-padded {
+    @apply w-1/2 mx-auto mt-12;
+}
+
+.input-group {
+    @apply py-2;
+}
+
+.modal-overlay {
+    background-color: rgba(17, 24, 39, .8);
+}
+
+.modal {
+    @apply w-1/2 p-10 rounded-xl bg-gray-100 mx-auto mt-24;
+}
+
+.step-number {
+    @apply flex items-center justify-center p-5 w-5 h-5 border-4 border-brand rounded-full font-bold text-xl;
+}
+
+.brand-input {
+    @apply py-3 px-5 rounded-lg border-brand border-2;
+}
