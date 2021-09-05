@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('../img/memphis-mini.png');
     background-size: 200px 200px;
