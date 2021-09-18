@@ -134,13 +134,13 @@
       </div>
     </div>
 
-    <header class="flex flex-col w-padded">
+    <header class="flex flex-col w-4/5 mx-auto mt-12 md:w-padded">
       <nav class="flex justify-between">
         <div class="logo">
-          <a href="#" class="text-4xl transition-colors text-brand hover:text-brand-hover font-bold">DNSolutions</a>
+          <a href="#" class="text-xl md:text-4xl transition-colors text-brand hover:text-brand-hover font-bold">DNSolutions</a>
         </div>
 
-        <nav class="w-1/4 flex justify-between align-middle text-subtle-dark">
+        <nav class="w-1/4 hidden md:flex justify-between align-middle text-subtle-dark">
           <a class="py-2 px-4" href="#work">My Work</a>
           <a class="py-2 px-4" href="#benefits">Benefits</a>
           <a class="py-2 px-4" href="#contact">Contact Me</a>
@@ -150,6 +150,8 @@
           href="#"
           @click="quoteModalOpen = true"
           class="
+            hidden
+            md:block
             quote
             transition-colors
             bg-white
@@ -166,42 +168,45 @@
         </a>
       </nav>
 
-      <div class="cta flex mt-36">
-        <div class="w-2/3 flex">
+      <div class="cta flex mt-16 md:mt-36">
+        <div class="w-full md:w-2/3 flex">
           <div class="cta-text flex flex-col self-center space-y-4">
-            <p class="text-2xl leading-5">
+            <p class="sm:text-sm md:text-2xl leading-5">
               Web experience to make your daily operations a cinch
             </p>
-            <h1 class="text-7xl font-bold leading-snug">
+            <h1 class="hidden xl:block text-3xl md:text-7xl font-bold leading-snug">
               I will make your <br />business look
               <span class="underlined-graphic">great</span>
             </h1>
+            <h1 class="text-4xl md:text-7xl font-bold leading-snug">
+              I will make your <br />business look great
+            </h1>
           </div>
         </div>
-        <div class="w-1/3">
+        <div class="w-1/3 hidden lg:block">
           <img class="mr-5" src="img/cta.svg" alt="Call To Action Graphic" />
         </div>
       </div>
     </header>
 
     <div
-      class="work w-full bg-alternate mt-32 min-w-screen overflow-visible"
+      class="work w-full bg-alternate mt-16 md:mt-32 min-w-screen overflow-visible"
       id="work"
     >
       <div class="w-padded py-12">
-        <h1 class="text-5xl font-bold">Work I have done</h1>
+        <h1 class="text-3xl md:text-5xl font-bold">Work I have done</h1>
 
-        <div class="work-items flex flex-wrap justify-between py-10">
-          <div class="work-item w-1/3 py-5 overflow-hidden cursor-pointer">
+        <div class="work-items flex flex-wrap justify-between py-5 md:py-10">
+          <div class="work-item w-full md:w-1/3 py-2 md:py-5 overflow-hidden cursor-pointer">
             <img class="transition-all duration-500 transform hover:bg-brand-hover hover:scale-110" src="img/work1.png" alt="" />
           </div>
-          <div class="w-1/3 py-5">
+          <div class="w-full md:w-1/3 py-2 md:py-5">
             <img src="img/work2.png" alt="" />
           </div>
-          <div class="w-1/3 py-5">
+          <div class="w-full md:w-1/3 py-2 md:py-5">
             <img src="img/work3.png" alt="" />
           </div>
-          <div class="w-1/3 py-5">
+          <div class="w-full md:w-1/3 py-2 md:py-5">
             <img src="img/work3.png" alt="" />
           </div>
         </div>
@@ -209,45 +214,45 @@
     </div>
 
     <div class="w-padded benefits mt-32" id="benefits">
-      <h1 class="text-5xl font-bold">Benefits you will get</h1>
+      <h1 class="text-3xl md:text-5xl font-bold">Benefits you will get</h1>
 
-      <div class="benefit-list mt-10">
-        <div class="top-row space-x-5 flex justify-between">
-          <div class="w-2/3 py-10">
-            <h2 class="text-brand font-bold text-4xl pb-3">
+      <div class="benefit-list mt-5 md:mt-10">
+        <div class="top-row md:space-x-5 flex flex-col md:flex-row justify-between">
+          <div class="md:w-2/3 py-5 md:py-10">
+            <h2 class="text-brand font-bold text-2xl md:text-4xl pb-3">
               Great communication
             </h2>
-            <p class="w-2/3">
+            <p>
               Importance of communication is paramount when it comes to
               understanding your needs.
             </p>
           </div>
 
-          <div class="w-2/3 py-10">
-            <h2 class="text-brand font-bold text-4xl pb-3">Readable code</h2>
-            <p class="w-2/3">
+          <div class="md:w-2/3 py-5 md:py-10">
+            <h2 class="text-brand font-bold text-2xl md:text-4xl pb-3">Readable code</h2>
+            <p>
               By using TDD and BDD approaches the code I write is readable and
               simple to understand - even for others.
             </p>
           </div>
         </div>
 
-        <div class="bottom-row space-x-5 flex justify-between">
-          <div class="w-2/3 py-10">
-            <h2 class="text-brand font-bold text-4xl pb-3">
+        <div class="bottom-row md:space-x-5 flex flex-col md:flex-row justify-between">
+          <div class="md:w-2/3 py-5 md:py-10">
+            <h2 class="text-brand font-bold text-2xl md:text-4xl pb-3">
               Attention to detail
             </h2>
-            <p class="w-2/3">
+            <p>
               Job is not done when only the specifications are fulfilled. My
               work stops when work on details is done.
             </p>
           </div>
 
-          <div class="w-2/3 py-10">
-            <h2 class="text-brand font-bold text-4xl pb-3">
+          <div class="md:w-2/3 py-5 md:py-10">
+            <h2 class="text-brand font-bold text-2xl md:text-4xl pb-3">
               Individual approach to everyone
             </h2>
-            <p class="w-2/3">
+            <p>
               There have not been 2 identical clients - everyone has their own
               needs for their business, - I am here to help with you with them.
             </p>
@@ -257,10 +262,10 @@
     </div>
 
     <div class="contact bg-alternate" id="contact">
-      <div class="w-extra-padded py-10">
+      <div class="w-padded md:w-extra-padded py-10">
         <div class="pb-10">
-          <h2 class="text-5xl font-bold pb-2">Get in touch</h2>
-          <p class="text-xl opacity-70">
+          <h2 class="text-3xl md:text-5xl font-bold pb-2">Get in touch</h2>
+          <p class="md:text-xl opacity-70">
             Interested in collaboration or making your idea a reality?
             <br />Drop me a message and I will get back to you!
           </p>
@@ -270,7 +275,7 @@
           <form action="#" method="post">
             <div class="input-group">
               <input
-                class="w-full brand-input"
+                class="w-full brand-input-mobile md:brand-input"
                 type="text"
                 id="first_name"
                 name="first_name"
@@ -280,7 +285,7 @@
 
             <div class="input-group">
               <select
-                class="w-full brand-input"
+                class="w-full brand-input-mobile md:brand-input"
                 id="first_name"
                 name="first_name"
               >
@@ -294,7 +299,7 @@
 
             <div class="input-group">
               <textarea
-                class="w-full h-56 brand-input"
+                class="w-full h-56 brand-input-mobile md:brand-input"
                 type="text"
                 id="first_name"
                 name="first_name"
@@ -310,8 +315,8 @@
               flex
               justify-between
               align-middle
-              space-x-5
-              my-5
+              md:space-x-5
+              md:my-5
               py-3
               px-5
               bg-brand
@@ -321,7 +326,7 @@
             type="submit"
           >
             <svg
-              class="w-8"
+              class="w-8 hidden md:block"
               viewBox="0 0 41 41"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +340,7 @@
                 fill="white"
               />
             </svg>
-            <span class="self-center text-xl font-bold">Send me a message</span>
+            <span class="self-center text-sm md:text-xl font-bold">Send me a message</span>
           </button>
         </div>
       </div>
