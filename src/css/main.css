@@ -6,6 +6,7 @@ body {
     /* background-image: url('../img/memphis-mini.png');
     background-size: 200px 200px; */
     font-family: 'Poppins', sans-serif;
+    @apply text-gray-900;
 }
 
 .text-subtle-dark {
